@@ -4,90 +4,74 @@
 body {
   margin: 0;
   color: gray;
-  font-family: "IBM Plex Mono", monospace;
-}
+  font-family: "IBM Plex Mono", monospace; }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.header .h1 {
-  font-family: "Indie Flower", cursive;
-  color: #FF7F50;
-  font-size: 50px;
-}
+  align-items: center; }
+  .header .h1 {
+    font-family: "Indie Flower", cursive;
+    color: #FF7F50;
+    font-size: 50px; }
 
 .platos:hover {
-  display: block;
-}
-.platos:hover .dropdown {
-  display: flex;
-  flex-direction: column;
-  background-color: #FFF5EE;
-  position: absolute;
-  z-index: 1;
-  list-style: none;
-  padding: 10px;
-}
+  display: block; }
+  .platos:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF5EE;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    padding: 10px; }
 
 .dropdown {
-  display: none;
-}
+  display: none; }
 
 .nav {
-  width: 60%;
-}
+  width: 60%; }
 
 .list {
   display: flex;
   justify-content: space-around;
   font-family: "IBM Plex Mono", monospace;
   color: #666;
-  list-style: none;
-}
-.list select {
-  border: none;
-  font-family: "IBM Plex Mono", monospace;
-  color: #666;
-}
+  list-style: none; }
+  .list select {
+    border: none;
+    font-family: "IBM Plex Mono", monospace;
+    color: #666; }
 
 ul.list {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-}
+  width: 100%; }
 
 a {
   text-decoration: none;
-  color: #666;
-}
+  color: #666; }
 
 a:hover {
-  color: #FF7F50;
-}
+  color: #FF7F50; }
 
 li:hover {
-  color: #FF7F50;
-}
+  color: #FF7F50; }
 
 .platos-menu {
   font-family: "IBM Plex Mono", monospace;
-  list-style: none;
-}
+  list-style: none; }
 
 .main-menu {
   display: flex;
   margin-right: 15%;
-  margin-left: 15%;
-}
+  margin-left: 15%; }
 
 .menu {
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .button-link {
   position: absolute;
@@ -95,128 +79,160 @@ li:hover {
   border-radius: 45%;
   border: none;
   border-radius: 25px;
-  padding: 8px 60px;
-}
+  padding: 8px 60px; }
 
 .button-link:hover {
-  background-color: #FF7F50;
-}
+  background-color: #FF7F50; }
 
 .image-menu {
   width: 96%;
-  height: auto;
-}
+  height: auto; }
 
 .image-menu img {
   width: 100%;
-  border-radius: 30%;
-}
+  border-radius: 30%; }
 
 .menu-mobile {
-  display: none;
-}
+  display: none; }
 
 /*sofia zeppa */
 .carousel {
   background-color: white;
   display: flex;
   width: 100%;
-  justify-content: center;
-}
-.carousel .img {
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  margin: 5px;
-}
-.carousel .img:first-of-type {
-  margin-left: 0;
-}
-.carousel .img:last-of-type {
-  margin-right: 0;
-}
-.carousel .img img {
-  height: 100%;
-  width: 100%;
-}
+  justify-content: center; }
+  .carousel .img {
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin: 5px; }
+    .carousel .img:first-of-type {
+      margin-left: 0; }
+    .carousel .img:last-of-type {
+      margin-right: 0; }
+    .carousel .img img {
+      height: 100%;
+      width: 100%; }
 
 .img:hover .slider {
   transform: translateY(-100%);
   position: absolute;
-  width: 100%;
-}
+  width: 100%; }
 
 .slider {
   position: absolute;
   top: 100%;
   width: 100%;
   transition: transform 250ms;
-  vertical-align: bottom;
-}
-.slider span {
-  display: block;
-  background-color: rgba(250, 120, 85, 0.5);
-  color: white;
-  font-family: "IBM Plex Mono", monospace;
-  padding: 5%;
-  font-size: 10px;
-}
+  vertical-align: bottom; }
+  .slider span {
+    display: block;
+    background-color: rgba(250, 120, 85, 0.5);
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 5%;
+    font-size: 10px; }
 
 .recipe-container {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .recipe-content {
   width: 45%;
-  font-size: 15px;
-}
-.recipe-content .recipe-header h2 {
-  padding: 0 2%;
-  color: black;
-}
-.recipe-content .recipe-header .header-top {
-  display: flex;
-  justify-content: space-between;
-}
-.recipe-content .citation {
-  border-left: #fa7855 solid 1px;
-  margin: 5% 0;
-  padding: 0 4%;
-}
-.recipe-content .citation p {
-  color: black;
-}
-.recipe-content .citation span {
-  text-transform: uppercase;
-}
+  font-size: 15px; }
+  .recipe-content .recipe-header h2 {
+    padding: 0 2%;
+    color: black; }
+  .recipe-content .recipe-header .header-top {
+    display: flex;
+    justify-content: space-between; }
+  .recipe-content .citation {
+    border-left: #fa7855 solid 1px;
+    margin: 5% 0;
+    padding: 0 4%; }
+    .recipe-content .citation p {
+      color: black; }
+    .recipe-content .citation span {
+      text-transform: uppercase; }
 
 .icons i {
-  padding: 2px;
-}
-.icons i span {
-  font-family: "IBM Plex Mono", monospace;
-}
+  padding: 2px; }
+  .icons i span {
+    font-family: "IBM Plex Mono", monospace; }
 
 .recipe-ing ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-.recipe-ing ul li {
-  padding: 1%;
-  text-indent: -0.7em;
-}
-.recipe-ing ul li::before {
-  content: "• ";
-  color: #fa7855;
-}
+  margin: 0; }
+  .recipe-ing ul li {
+    padding: 1%;
+    text-indent: -.7em; }
+  .recipe-ing ul li::before {
+    content: "• ";
+    color: #fa7855; }
 
 /*sofia zeppa*/
+/* Nicole Pizarro*/
+.main-s1 {
+  margin: 100px auto; }
+
+.section1 {
+  width: 80%;
+  height: 556px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .section1 .video {
+    width: 70%;
+    height: 100%;
+    display: flex; }
+    .section1 .video iframe {
+      width: 98%;
+      height: auto; }
+  .section1 .about {
+    width: 28%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .section1 .about .title {
+      background-color: #fde2da;
+      font-size: 18px; }
+      .section1 .about .title p {
+        margin: 5; }
+    .section1 .about .profilepic {
+      width: 280px;
+      height: auto;
+      margin: auto; }
+      .section1 .about .profilepic img {
+        width: 100%;
+        border-radius: 50%; }
+    .section1 .about .name {
+      font-size: 20px;
+      margin: 0; }
+    .section1 .about .description {
+      color: gray;
+      margin: 0; }
+    .section1 .about .newsletter {
+      background-color: #fde2da;
+      font-size: 18px; }
+      .section1 .about .newsletter p {
+        margin: 5; }
+
+.videodescr {
+  width: 80%;
+  margin: auto; }
+  .videodescr p {
+    margin: 0;
+    color: gray;
+    font-family: "IBM Plex Mono", monospace; }
+
 @media (max-width: 800px) {
   .list {
-    display: none;
-  }
+    display: none; }
 
   .menu-mobile {
     display: block;
@@ -226,82 +242,65 @@ li:hover {
     flex-direction: column;
     border-radius: 25px;
     padding: 8px 160px;
-    font-family: "IBM Plex Mono", monospace;
-  }
-  .menu-mobile .button-menu {
-    border: none;
-    background-color: #FF7F50;
-    color: white;
-    font-size: 20px;
-  }
+    font-family: "IBM Plex Mono", monospace; }
+    .menu-mobile .button-menu {
+      border: none;
+      background-color: #FF7F50;
+      color: white;
+      font-size: 20px; }
 
   a {
-    color: white;
-  }
+    color: white; }
 
   .menu-options {
     list-style: none;
     display: none;
-    border: none;
-  }
-  .menu-options a:hover {
-    color: white;
-  }
+    border: none; }
+    .menu-options a:hover {
+      color: white; }
 
   a:hover {
-    color: black;
-  }
+    color: black; }
 
   .button-menu:hover {
-    color: black;
-  }
-  .button-menu:hover .menu-options {
-    list-style: none;
-    display: block;
-    background-color: #FF7F50;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: absolute;
-    z-index: 1;
-    border: none;
-    margin: 0;
-  }
-  .button-menu:hover .menu-options a:hover {
-    color: white;
-  }
+    color: black; }
+    .button-menu:hover .menu-options {
+      list-style: none;
+      display: block;
+      background-color: #FF7F50;
+      padding-left: 40px;
+      padding-right: 40px;
+      position: absolute;
+      z-index: 1;
+      border: none;
+      margin: 0; }
+      .button-menu:hover .menu-options a:hover {
+        color: white; }
 
   .main-menu {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   /*sofia zeppa*/
   .carousel .img {
     display: none;
-    margin: 5% 0;
-  }
-  .carousel .img:first-of-type {
-    display: block;
-  }
+    margin: 5% 0; }
+    .carousel .img:first-of-type {
+      display: block; }
   .carousel .slider {
-    display: none;
-  }
+    display: none; }
 
   .recipe-content {
     width: 100%;
     font-size: initial;
-    margin: 0 1%;
-  }
-  .recipe-content .recipe-header h2 {
-    padding: 0 7%;
-  }
-  .recipe-content .citation {
-    padding: 0 5%;
-    margin: 10% 0;
-  }
+    margin: 0 1%; }
+    .recipe-content .recipe-header h2 {
+      padding: 0 7%; }
+    .recipe-content .citation {
+      padding: 0 5%;
+      margin: 10% 0; }
 
-  /*sofia zeppa*/
-}
+  /*sofia zeppa*/ }
 /*Fin parte css-home de Maria Eva Pizzorno*/
 /*css de receta*/
 /*Inicio parte Maria Eva Pizzorno*/
@@ -310,15 +309,12 @@ li:hover {
   flex-direction: row;
   font-weight: bold;
   font-size: 17px;
-  margin-left: 160px;
-}
-.archive span {
-  color: #666;
-}
+  margin-left: 160px; }
+  .archive span {
+    color: #666; }
 
 .menu-mobile {
-  display: none;
-}
+  display: none; }
 
 @media (max-width: 800px) {
   .menu-mobile {
@@ -328,39 +324,30 @@ li:hover {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    padding: 8px 160px;
-  }
-  .menu-mobile .button-menu {
-    border: none;
-    background-color: #FF7F50;
-    color: white;
-    font-size: 20px;
-  }
+    padding: 8px 160px; }
+    .menu-mobile .button-menu {
+      border: none;
+      background-color: #FF7F50;
+      color: white;
+      font-size: 20px; }
 
   a {
-    color: white;
-  }
+    color: white; }
 
   .menu-options {
-    list-style: none;
-  }
-  .menu-options a:hover {
-    color: white;
-  }
+    list-style: none; }
+    .menu-options a:hover {
+      color: white; }
 
   .banner {
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
 
   .banner img {
-    width: 100%;
-  }
+    width: 100%; }
 
   .archive {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 /*Fin parte receta de Maria Eva Pizzorno*/
 
 /*# sourceMappingURL=styles.css.map */

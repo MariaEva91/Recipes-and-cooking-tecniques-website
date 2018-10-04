@@ -1,4 +1,15 @@
 $naranja: #fa7855;
+
+@mixin titlesAbout {
+    background-color: #fde2da;
+    font-size: 18px;
+   
+    p {
+       margin: 5;
+    }
+
+}
+
 /*css de HOME*/
 /*Hecho por Maria Eva Pizzorno*/
 body{
@@ -207,6 +218,93 @@ li:hover{
     }     
 }
 /*sofia zeppa*/
+/* Nicole Pizarro*/
+
+.main-s1 {
+    margin: 100px auto;
+}
+
+.section1 {
+    width: 80%;
+    height: 556px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    .video {
+        width: 70%;
+        height: 100%;
+        display: flex;
+
+        iframe {
+            width: 98%;
+            height: auto;
+        }
+
+    }
+
+    .about {
+        width: 28%;
+        height: 100%;
+        font-family: "IBM Plex Mono", monospace;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        .title {
+
+            @include titlesAbout();
+            
+        }
+       
+        .profilepic {
+
+            width: 280px;
+            height: auto;
+            margin: auto;
+            
+           
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+                
+            }
+
+        }
+
+        .name {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .description {
+            color: gray;
+            margin: 0;
+        }
+        
+        .newsletter {
+            @include titlesAbout();
+        }
+    }    
+}
+
+.videodescr {
+
+    width: 80%;
+    margin: auto;
+
+    p {
+    margin: 0;
+    color: gray;
+    font-family: "IBM Plex Mono", monospace;
+    }
+
+}
+
 
 @media ( max-width: 800px){
     .list{
