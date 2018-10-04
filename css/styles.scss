@@ -1,7 +1,10 @@
+$naranja: #fa7855;
 /*css de HOME*/
 /*Hecho por Maria Eva Pizzorno*/
 body{
     margin: 0;
+    color: gray;
+    font-family: "IBM Plex Mono", monospace;
 }
 .header{
     display: flex;
@@ -106,6 +109,104 @@ li:hover{
 .menu-mobile{
     display: none;
 }
+/*sofia zeppa */
+.carousel {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .img { 
+        overflow: hidden;
+        position: relative;
+        align-items: center;
+        margin: 5px;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.img:hover {
+    .slider {
+        transform:translateY(-100%);
+        position: absolute;
+        width: 100%;
+    }
+}
+.slider {
+    position:absolute;
+    top: 100%;
+    width: 100%;
+    transition: transform 250ms;
+    vertical-align: bottom;    
+    span {
+        display:block;
+        background-color: rgba(250, 120, 85, 0.5);
+        color: white;
+        font-family: "IBM Plex Mono", monospace;
+        padding: 5%;
+        font-size: 10px;
+    }
+}
+.recipe-container {
+    display: flex;
+    justify-content: center;
+}
+.recipe-content {
+    width: 45%;
+    font-size: 15px;
+    .recipe-header {
+        h2 {
+            padding: 0 2%;
+            color: black;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .citation {
+        border-left: $naranja solid 1px;
+        margin: 5% 0;
+        padding: 0 4%;
+        p {
+            color: black;
+        }
+        span {
+            text-transform: uppercase;
+        }
+    }
+}
+.icons {
+    i {
+    padding: 2px;
+    span {
+        font-family: "IBM Plex Mono", monospace;
+        }
+    }
+}
+.recipe-ing {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 1%;
+            text-indent: -.7em;
+        }
+        li::before {
+            content: "• ";
+            color: $naranja;
+        }
+    }     
+}
+/*sofia zeppa*/
 
 @media ( max-width: 800px){
     .list{
@@ -164,8 +265,35 @@ li:hover{
         display: flex;
         flex-direction: column;
     }
+    /*sofia zeppa*/
+    .carousel {
+        .img {
+            display: none;
+            margin: 5% 0;
+            &:first-of-type {
+                display: block;
+            }
+        }
+        .slider {
+            display: none;
+        }
+    }
+    .recipe-content {
+        width: 100%;
+        font-size: initial;
+        margin: 0 1%;
+        .recipe-header {
+            h2 {
+                padding: 0 7%;
+            }
+        }
+        .citation {
+            padding: 0 5%;
+            margin: 10% 0;
+        }
+    }
+    /*sofia zeppa*/
 }   
-
 /*Fin parte css-home de Maria Eva Pizzorno*/
 
     /*css de receta*/
