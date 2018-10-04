@@ -373,6 +373,9 @@ li:hover {
     padding: 0 5%;
     margin: 10% 0;
   }
+  .recipe-content .recipe-ing ul li {
+    text-indent: -0.4em;
+  }
 
   /*sofia zeppa*/
 }
@@ -439,7 +442,8 @@ li:hover {
 /*Media NP*/
 @media (max-width: 800px) {
   .main-s1 {
-    margin: 20px auto; }
+    margin: 20px auto;
+  }
 
   .section1 {
     width: 100%;
@@ -447,42 +451,55 @@ li:hover {
     margin: 15px auto;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
-    .section1 .video {
-      display: none; }
-    .section1 .about {
-      width: 90%;
-      height: 100%;
-      font-family: "IBM Plex Mono", monospace;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .section1 .about .title {
-        background-color: #fde2da;
-        font-size: 18px; }
-        .section1 .about .title p {
-          margin: 5; }
-      .section1 .about .profilepic {
-        width: 280px;
-        height: auto;
-        margin: auto; }
-        .section1 .about .profilepic img {
-          width: 100%;
-          border-radius: 50%; }
-      .section1 .about .name {
-        font-size: 20px;
-        margin: 0; }
-      .section1 .about .description {
-        color: gray;
-        margin: 0; }
-      .section1 .about .newsletter {
-        background-color: #fde2da;
-        font-size: 18px; }
-        .section1 .about .newsletter p {
-          margin: 5; }
+    justify-content: space-around;
+  }
+  .section1 .video {
+    display: none;
+  }
+  .section1 .about {
+    width: 90%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section1 .about .title {
+    background-color: #fde2da;
+    font-size: 18px;
+  }
+  .section1 .about .title p {
+    margin: 5;
+  }
+  .section1 .about .profilepic {
+    width: 280px;
+    height: auto;
+    margin: auto;
+  }
+  .section1 .about .profilepic img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .section1 .about .name {
+    font-size: 20px;
+    margin: 0;
+  }
+  .section1 .about .description {
+    color: gray;
+    margin: 0;
+  }
+  .section1 .about .newsletter {
+    background-color: #fde2da;
+    font-size: 18px;
+  }
+  .section1 .about .newsletter p {
+    margin: 5;
+  }
 
   .videodescr {
-    display: none; } }
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
