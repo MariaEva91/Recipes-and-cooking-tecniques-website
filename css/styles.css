@@ -48,6 +48,9 @@ body {
   font-family: "IBM Plex Mono", monospace;
   color: #666;
 }
+.list select li:hover {
+  color: #FF7F50;
+}
 
 ul.list {
   display: flex;
@@ -61,10 +64,6 @@ a {
 }
 
 a:hover {
-  color: #FF7F50;
-}
-
-li:hover {
   color: #FF7F50;
 }
 
@@ -125,8 +124,11 @@ li:hover {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    padding: 8px 160px;
+    width: 90%;
+    text-align: center;
     font-family: "IBM Plex Mono", monospace;
+    align-items: center;
+    position: relative;
   }
   .menu-mobile .button-menu {
     border: none;
@@ -143,6 +145,8 @@ li:hover {
     list-style: none;
     display: none;
     border: none;
+    left: 25%;
+    position: absolute;
   }
   .menu-options a:hover {
     color: white;
@@ -201,7 +205,6 @@ li:hover {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    padding: 8px 160px;
   }
   .menu-mobile .button-menu {
     border: none;
