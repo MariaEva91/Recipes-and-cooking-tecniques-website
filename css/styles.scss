@@ -12,6 +12,13 @@ $font: 'IBM Plex Mono', monospace;
 
 }
 
+@mixin socialIcons {
+
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
 /*css de HOME*/
 /*Hecho por Maria Eva Pizzorno*/
 body{
@@ -220,7 +227,7 @@ li:hover{
 }
 /*sofia zeppa*/
 /* Nicole Pizarro*/
-
+/* home*/
 .main-s1 {
     margin: 100px auto;
 }
@@ -292,7 +299,6 @@ li:hover{
         }
     }    
 }
-
 .videodescr {
 
     width: 80%;
@@ -304,6 +310,133 @@ li:hover{
     font-family: "IBM Plex Mono", monospace;
     }
 
+}
+/*home*/
+/*receta*/
+.container-social {
+    width: auto;
+    height: 410px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    .container-photo { 
+        width: 53%;
+        height: 100%;
+
+        img {
+            width: auto;
+            border-radius: 10%;
+        }
+    }    
+
+    .container-icons {
+        width: 8%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.icon1 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #3b5998; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    p {
+        text-align: center;
+    }
+
+    .fa-facebook-f {
+        @include socialIcons ();
+    }
+}
+
+.icon2 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #55acee; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    p {
+        text-align: center;
+    }
+
+    .fa-twitter {
+        @include socialIcons ();
+
+    }
+}
+
+.icon3 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #dd4b39; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
+
+    .fa-google-plus-g {
+        @include socialIcons ();
+
+    }
+}
+
+.icon4 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #8f6247; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
+
+    .fa-instagram {
+        @include socialIcons ();
+
+    }
+}
+
+.icon5 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #cb2027; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
 }
 
 // Belen Nusbaum //
@@ -369,6 +502,13 @@ li:hover{
 // Belen Nusbaum//
 
 
+    .fa-pinterest-p {
+        @include socialIcons ();
+
+    }
+
+
+/* Nicole Pizarro*/
 
 @media ( max-width: 800px){
     .list{
@@ -443,7 +583,7 @@ li:hover{
     .recipe-content {
         width: 100%;
         font-size: initial;
-        margin: 0 1%;
+        margin: 0 5%;
         .recipe-header {
             h2 {
                 padding: 0 7%;
@@ -452,6 +592,13 @@ li:hover{
         .citation {
             padding: 0 5%;
             margin: 10% 0;
+        }
+        .recipe-ing {
+            ul{
+                li{
+                    text-indent: -.4em;
+                }
+            }
         }
     }
     /*sofia zeppa*/
@@ -462,6 +609,7 @@ li:hover{
 
 
 @media (max-width: 800px) {
+    
     
 // Belen Nusbaum
     .box {
@@ -483,6 +631,7 @@ li:hover{
             }
 
     }
+    
     
 
     .description {
@@ -592,3 +741,78 @@ li:hover{
 }
 
 /*Fin parte receta de Maria Eva Pizzorno*/
+
+/*Media NP*/
+
+@media (max-width:800px) {
+    .main-s1 {
+        margin: 20px auto;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 556px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+
+        .video {
+            
+            display: none;
+
+        }
+
+        .about {
+            width: 90%;
+            height: 100%;
+            font-family: "IBM Plex Mono", monospace;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            .title {
+
+                @include titlesAbout();
+                
+            }
+        
+            .profilepic {
+
+                width: 280px;
+                height: auto;
+                margin: auto;
+                
+            
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                    
+                }
+
+            }
+
+            .name {
+                font-size: 20px;
+                margin: 0;
+            }
+            
+            .description {
+                color: gray;
+                margin: 0;
+            }
+            
+            .newsletter {
+                @include titlesAbout();
+            }
+        }    
+    }
+    .videodescr {
+
+        display: none;
+    }
+
+}
