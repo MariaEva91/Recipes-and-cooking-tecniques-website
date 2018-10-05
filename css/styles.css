@@ -1,46 +1,43 @@
+@charset "UTF-8";
 /*css de HOME*/
 /*Hecho por Maria Eva Pizzorno*/
 body {
   margin: 0;
-}
+  color: gray;
+  font-family: "IBM Plex Mono", monospace; }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.header .h1 {
-  font-family: "Indie Flower", cursive;
-  color: #FF7F50;
-  font-size: 50px;
-}
+  align-items: center; }
+  .header .h1 {
+    font-family: "Indie Flower", cursive;
+    color: #FF7F50;
+    font-size: 50px; }
 
 .platos:hover {
-  display: block;
-}
-.platos:hover .dropdown {
-  display: flex;
-  flex-direction: column;
-  background-color: #FFF5EE;
-  position: absolute;
-  z-index: 1;
-  list-style: none;
-  padding: 10px;
-}
+  display: block; }
+  .platos:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF5EE;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    padding: 10px; }
 
 .dropdown {
-  display: none;
-}
+  display: none; }
 
 .nav {
-  width: 60%;
-}
+  width: 60%; }
 
 .list {
   display: flex;
   justify-content: space-around;
   font-family: "IBM Plex Mono", monospace;
   color: #666;
+<<<<<<< HEAD
   list-style: none;
 }
 .list select {
@@ -51,39 +48,46 @@ body {
 .list select li:hover {
   color: #FF7F50;
 }
+=======
+  list-style: none; }
+  .list select {
+    border: none;
+    font-family: "IBM Plex Mono", monospace;
+    color: #666; }
+>>>>>>> ccb91c827152ccf3fa82968b6f1523e6ecdb2ea4
 
 ul.list {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-}
+  width: 100%; }
 
 a {
   text-decoration: none;
-  color: #666;
-}
+  color: #666; }
 
 a:hover {
-  color: #FF7F50;
-}
+  color: #FF7F50; }
 
+<<<<<<< HEAD
+=======
+li:hover {
+  color: #FF7F50; }
+
+>>>>>>> ccb91c827152ccf3fa82968b6f1523e6ecdb2ea4
 .platos-menu {
   font-family: "IBM Plex Mono", monospace;
-  list-style: none;
-}
+  list-style: none; }
 
 .main-menu {
   display: flex;
   margin-right: 15%;
-  margin-left: 15%;
-}
+  margin-left: 15%; }
 
 .menu {
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .button-link {
   position: absolute;
@@ -91,31 +95,306 @@ a:hover {
   border-radius: 45%;
   border: none;
   border-radius: 25px;
-  padding: 8px 60px;
-}
+  padding: 8px 60px; }
 
 .button-link:hover {
-  background-color: #FF7F50;
-}
+  background-color: #FF7F50; }
 
 .image-menu {
   width: 96%;
-  height: auto;
-}
+  height: auto; }
 
 .image-menu img {
   width: 100%;
-  border-radius: 30%;
-}
+  border-radius: 30%; }
 
 .menu-mobile {
-  display: none;
-}
+  display: none; }
 
+/*sofia zeppa */
+.carousel {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .carousel .img {
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin: 5px; }
+    .carousel .img:first-of-type {
+      margin-left: 0; }
+    .carousel .img:last-of-type {
+      margin-right: 0; }
+    .carousel .img img {
+      height: 100%;
+      width: 100%; }
+
+.img:hover .slider {
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%; }
+
+.slider {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: transform 250ms;
+  vertical-align: bottom; }
+  .slider span {
+    display: block;
+    background-color: rgba(250, 120, 85, 0.5);
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 5%;
+    font-size: 10px; }
+
+.recipe-container {
+  display: flex;
+  justify-content: center; }
+
+.recipe-content {
+  width: 45%;
+  font-size: 15px; }
+  .recipe-content .recipe-header h2 {
+    padding: 0 2%;
+    color: black; }
+  .recipe-content .recipe-header .header-top {
+    display: flex;
+    justify-content: space-between; }
+  .recipe-content .citation {
+    border-left: #fa7855 solid 1px;
+    margin: 5% 0;
+    padding: 0 4%; }
+    .recipe-content .citation p {
+      color: black; }
+    .recipe-content .citation span {
+      text-transform: uppercase; }
+
+.icons i {
+  padding: 2px; }
+  .icons i span {
+    font-family: "IBM Plex Mono", monospace; }
+
+.recipe-ing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .recipe-ing ul li {
+    padding: 1%;
+    text-indent: -.7em; }
+  .recipe-ing ul li::before {
+    content: "• ";
+    color: #fa7855; }
+
+/*sofia zeppa*/
+/* Nicole Pizarro*/
+/* home*/
+.main-s1 {
+  margin: 100px auto; }
+
+.section1 {
+  width: 80%;
+  height: 556px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .section1 .video {
+    width: 70%;
+    height: 100%;
+    display: flex; }
+    .section1 .video iframe {
+      width: 98%;
+      height: auto; }
+  .section1 .about {
+    width: 28%;
+    height: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .section1 .about .title {
+      background-color: #fde2da;
+      font-size: 18px; }
+      .section1 .about .title p {
+        margin: 5; }
+    .section1 .about .profilepic {
+      width: 280px;
+      height: auto;
+      margin: auto; }
+      .section1 .about .profilepic img {
+        width: 100%;
+        border-radius: 50%; }
+    .section1 .about .name {
+      font-size: 20px;
+      margin: 0; }
+    .section1 .about .description {
+      color: gray;
+      margin: 0; }
+    .section1 .about .newsletter {
+      background-color: #fde2da;
+      font-size: 18px; }
+      .section1 .about .newsletter p {
+        margin: 5; }
+
+.videodescr {
+  width: 80%;
+  margin: auto; }
+  .videodescr p {
+    margin: 0;
+    color: gray;
+    font-family: "IBM Plex Mono", monospace; }
+
+/*home*/
+/*receta*/
+.container-social {
+  width: auto;
+  height: 410px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  .container-social .container-photo {
+    width: 53%;
+    height: 100%; }
+    .container-social .container-photo img {
+      width: auto;
+      border-radius: 10%; }
+  .container-social .container-icons {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+.icon1 {
+  width: 30px;
+  height: 30px;
+  background-color: #3b5998;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .icon1 p {
+    text-align: center; }
+  .icon1 .fa-facebook-f {
+    font-size: 25px;
+    color: white;
+    text-align: center; }
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+  background-color: #55acee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .icon2 p {
+    text-align: center; }
+  .icon2 .fa-twitter {
+    font-size: 25px;
+    color: white;
+    text-align: center; }
+
+.icon3 {
+  width: 30px;
+  height: 30px;
+  background-color: #dd4b39;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .icon3 p {
+    text-align: center; }
+  .icon3 .fa-google-plus-g {
+    font-size: 25px;
+    color: white;
+    text-align: center; }
+
+.icon4 {
+  width: 30px;
+  height: 30px;
+  background-color: #8f6247;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .icon4 p {
+    text-align: center; }
+  .icon4 .fa-instagram {
+    font-size: 25px;
+    color: white;
+    text-align: center; }
+
+.icon5 {
+  width: 30px;
+  height: 30px;
+  background-color: #cb2027;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .icon5 p {
+    text-align: center; }
+
+.box {
+  display: flex;
+  width: 70%;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border-top: 1px solid grey;
+  margin: auto; }
+  .box .nota {
+    width: 230px;
+    height: 150px;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex; }
+  .box .description {
+    width: 45%;
+    padding: 20px;
+    color: grey; }
+    .box .description h3 {
+      color: #000000;
+      padding: 5px; }
+    .box .description a {
+      text-decoration: none;
+      color: #000000;
+      background-color: #fde2da;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 5px 30px; }
+    .box .description .info {
+      display: flex;
+      justify-content: space-between; }
+
+.social-networks {
+  padding: 10px;
+  color: grey;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between; }
+  .social-networks a {
+    text-decoration: none;
+    color: gray; }
+
+.icon-arrow {
+  display: none; }
+
+.fa-pinterest-p {
+  font-size: 25px;
+  color: white;
+  text-align: center; }
+
+/* Nicole Pizarro*/
 @media (max-width: 800px) {
   .list {
-    display: none;
-  }
+    display: none; }
 
   .menu-mobile {
     display: block;
@@ -124,6 +403,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
+<<<<<<< HEAD
     width: 90%;
     text-align: center;
     font-family: "IBM Plex Mono", monospace;
@@ -136,14 +416,23 @@ a:hover {
     color: white;
     font-size: 20px;
   }
+=======
+    padding: 8px 160px;
+    font-family: "IBM Plex Mono", monospace; }
+    .menu-mobile .button-menu {
+      border: none;
+      background-color: #FF7F50;
+      color: white;
+      font-size: 20px; }
+>>>>>>> ccb91c827152ccf3fa82968b6f1523e6ecdb2ea4
 
   a {
-    color: white;
-  }
+    color: white; }
 
   .menu-options {
     list-style: none;
     display: none;
+<<<<<<< HEAD
     border: none;
     left: 25%;
     position: absolute;
@@ -151,51 +440,116 @@ a:hover {
   .menu-options a:hover {
     color: white;
   }
+=======
+    border: none; }
+    .menu-options a:hover {
+      color: white; }
+>>>>>>> ccb91c827152ccf3fa82968b6f1523e6ecdb2ea4
 
   a:hover {
-    color: black;
-  }
+    color: black; }
 
   .button-menu:hover {
-    color: black;
-  }
-  .button-menu:hover .menu-options {
-    list-style: none;
-    display: block;
-    background-color: #FF7F50;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: absolute;
-    z-index: 1;
-    border: none;
-    margin: 0;
-  }
-  .button-menu:hover .menu-options a:hover {
-    color: white;
-  }
+    color: black; }
+    .button-menu:hover .menu-options {
+      list-style: none;
+      display: block;
+      background-color: #FF7F50;
+      padding-left: 40px;
+      padding-right: 40px;
+      position: absolute;
+      z-index: 1;
+      border: none;
+      margin: 0; }
+      .button-menu:hover .menu-options a:hover {
+        color: white; }
 
   .main-menu {
     display: flex;
-    flex-direction: column;
-  }
-}
+    flex-direction: column; }
+
+  /*sofia zeppa*/
+  .carousel .img {
+    display: none;
+    margin: 5% 0; }
+    .carousel .img:first-of-type {
+      display: block; }
+  .carousel .slider {
+    display: none; }
+
+  .recipe-content {
+    width: 100%;
+    font-size: initial;
+    margin: 0 5%; }
+    .recipe-content .recipe-header h2 {
+      padding: 0 7%; }
+    .recipe-content .citation {
+      padding: 0 5%;
+      margin: 10% 0; }
+    .recipe-content .recipe-ing ul li {
+      text-indent: -.4em; }
+
+  /*sofia zeppa*/ }
 /*Fin parte css-home de Maria Eva Pizzorno*/
+@media (max-width: 800px) {
+  .box {
+    display: none;
+    width: 100%; }
+    .box:first-of-type {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      font-size: 15px; }
+    .box .info {
+      display: flex;
+      justify-content: space-around; }
+    .box .nota {
+      display: none; }
+
+  .description {
+    display: flex;
+    flex-direction: column; }
+    .description .author {
+      text-align: center;
+      width: 55%; }
+    .description .icons {
+      text-align: center; }
+    .description .recipes {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+
+  .box .description {
+    width: 100%; }
+
+  .social-networks span span {
+    display: none; }
+
+  p.articulo {
+    text-align: center; }
+
+  .icon-arrow {
+    color: #fa7855;
+    bottom: 15px;
+    display: inline-block; }
+    .icon-arrow .fa-arrow-circle-up {
+      position: absolute;
+      z-index: 1;
+      text-decoration: none;
+      color: #fa7855;
+      margin-left: 50%; } }
 /*css de receta*/
-/*Inicio parte Maria Eva Pizzorno*/
 .archive {
   display: flex;
   flex-direction: row;
   font-weight: bold;
   font-size: 17px;
-  margin-left: 160px;
-}
-.archive span {
-  color: #666;
-}
+  margin-left: 160px; }
+  .archive span {
+    color: #666; }
 
 .menu-mobile {
-  display: none;
-}
+  display: none; }
 
 @media (max-width: 800px) {
   .menu-mobile {
@@ -205,6 +559,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
+<<<<<<< HEAD
   }
   .menu-mobile .button-menu {
     border: none;
@@ -212,31 +567,177 @@ a:hover {
     color: white;
     font-size: 20px;
   }
+=======
+    padding: 8px 160px; }
+    .menu-mobile .button-menu {
+      border: none;
+      background-color: #FF7F50;
+      color: white;
+      font-size: 20px; }
+>>>>>>> ccb91c827152ccf3fa82968b6f1523e6ecdb2ea4
 
   a {
-    color: white;
-  }
+    color: white; }
 
   .menu-options {
-    list-style: none;
-  }
-  .menu-options a:hover {
-    color: white;
-  }
+    list-style: none; }
+    .menu-options a:hover {
+      color: white; }
 
   .banner {
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
 
   .banner img {
-    width: 100%;
-  }
+    width: 100%; }
 
   .archive {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 /*Fin parte receta de Maria Eva Pizzorno*/
+/*Media NP*/
+@media (max-width: 800px) {
+  .main-s1 {
+    margin: 20px auto; }
+
+  .section1 {
+    width: 100%;
+    height: 556px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .section1 .video {
+      display: none; }
+    .section1 .about {
+      width: 90%;
+      height: 100%;
+      font-family: "IBM Plex Mono", monospace;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .section1 .about .title {
+        background-color: #fde2da;
+        font-size: 18px; }
+        .section1 .about .title p {
+          margin: 5; }
+      .section1 .about .profilepic {
+        width: 280px;
+        height: auto;
+        margin: auto; }
+        .section1 .about .profilepic img {
+          width: 100%;
+          border-radius: 50%; }
+      .section1 .about .name {
+        font-size: 20px;
+        margin: 0; }
+      .section1 .about .description {
+        color: gray;
+        margin: 0; }
+      .section1 .about .newsletter {
+        background-color: #fde2da;
+        font-size: 18px; }
+        .section1 .about .newsletter p {
+          margin: 5; }
+
+  .videodescr {
+    display: none; }
+
+  .container-social {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 20px auto 5px; }
+    .container-social .container-photo {
+      width: 95%;
+      height: auto;
+      margin: 10px auto 5px; }
+      .container-social .container-photo img {
+        width: 100%;
+        border-radius: 10%; }
+    .container-social .container-icons {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+
+  .icon1 {
+    width: 30px;
+    height: 30px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .icon1 p {
+      text-align: center; }
+    .icon1 .fa-facebook-f {
+      font-size: 25px;
+      color: white;
+      text-align: center; }
+
+  .icon2 {
+    width: 30px;
+    height: 30px;
+    background-color: #55acee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .icon2 p {
+      text-align: center; }
+    .icon2 .fa-twitter {
+      font-size: 25px;
+      color: white;
+      text-align: center; }
+
+  .icon3 {
+    width: 30px;
+    height: 30px;
+    background-color: #dd4b39;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .icon3 p {
+      text-align: center; }
+    .icon3 .fa-google-plus-g {
+      font-size: 25px;
+      color: white;
+      text-align: center; }
+
+  .icon4 {
+    width: 30px;
+    height: 30px;
+    background-color: #8f6247;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .icon4 p {
+      text-align: center; }
+    .icon4 .fa-instagram {
+      font-size: 25px;
+      color: white;
+      text-align: center; }
+
+  .icon5 {
+    width: 30px;
+    height: 30px;
+    background-color: #cb2027;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .icon5 p {
+      text-align: center; }
+    .icon5 .fa-pinterest-p {
+      font-size: 25px;
+      color: white;
+      text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
