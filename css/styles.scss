@@ -10,6 +10,13 @@ $naranja: #fa7855;
 
 }
 
+@mixin socialIcons {
+
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
 /*css de HOME*/
 /*Hecho por Maria Eva Pizzorno*/
 body{
@@ -219,6 +226,7 @@ li:hover{
 }
 /*sofia zeppa*/
 /* Nicole Pizarro*/
+/* home*/
 .main-s1 {
     margin: 100px auto;
 }
@@ -302,6 +310,139 @@ li:hover{
     }
 
 }
+/*home*/
+/*receta*/
+.container-social {
+    width: auto;
+    height: 410px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    .container-photo { 
+        width: 53%;
+        height: 100%;
+
+        img {
+            width: auto;
+            border-radius: 10%;
+        }
+    }    
+
+    .container-icons {
+        width: 8%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.icon1 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #3b5998; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    p {
+        text-align: center;
+    }
+
+    .fa-facebook-f {
+        @include socialIcons ();
+    }
+}
+
+.icon2 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #55acee; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    p {
+        text-align: center;
+    }
+
+    .fa-twitter {
+        @include socialIcons ();
+
+    }
+}
+
+.icon3 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #dd4b39; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
+
+    .fa-google-plus-g {
+        @include socialIcons ();
+
+    }
+}
+
+.icon4 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #8f6247; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
+
+    .fa-instagram {
+        @include socialIcons ();
+
+    }
+}
+
+.icon5 {
+
+    width: 30px;
+    height: 30px;
+    background-color: #cb2027; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    p {
+        text-align: center;
+    }
+
+    .fa-pinterest-p {
+        @include socialIcons ();
+
+    }
+}
+
 /* Nicole Pizarro*/
 
 @media ( max-width: 800px){
@@ -532,4 +673,5 @@ li:hover{
 
         display: none;
     }
+
 }
