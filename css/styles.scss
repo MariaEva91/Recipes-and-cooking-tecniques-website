@@ -53,9 +53,10 @@ body{
     }
 
 .nav{
-    width: 60%;
-}
-.list{
+    width: 60%; 
+    }  
+
+ul.list{
      display: flex;
      justify-content: space-around;
     font-family: "IBM Plex Mono", monospace;
@@ -70,7 +71,8 @@ body{
             }
                  
         }
-}
+    }
+
 ul.list{
     display: flex;
     justify-content: space-around;
@@ -538,9 +540,7 @@ a:hover{
                    
             }
     }
-    a{
-        color: white;
-    }
+  
  .menu-options{
      list-style: none;
       display: none;
@@ -698,7 +698,7 @@ a:hover{
     flex-direction: row;
     font-weight: bold;
     font-size: 17px;
-    margin-left: 160px;
+    margin-left: 20px;
         span{
             color: #666;
         }
@@ -710,6 +710,9 @@ a:hover{
 
 @media ( max-width: 800px){
     
+    .nav{
+        display: none;
+    }
     .menu-mobile{
         display: block;
         background-color: #FF7F50;
@@ -723,13 +726,14 @@ a:hover{
                 border: none;
                 background-color: #FF7F50;
                 color: white;
-                font-size: 20px;         
+                font-size: 20px;   
+                a{
+                   color: white;
+                   }      
             }
         }
     }
-    a{
-        color: white;
-    }
+  // 
     .menu-options{
           list-style: none;
                a:hover{
